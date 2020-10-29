@@ -1,8 +1,5 @@
 package com.example.viewmodel;
 
-import android.content.Context;
-import android.util.Log;
-
 
 import com.example.retrofit.ApiService;
 import com.example.retrofit.RetrofitManager;
@@ -18,25 +15,20 @@ import io.reactivex.schedulers.Schedulers;
 
 
 public class PhotoViewModel extends Observable {
-    private Context context;
     private List<Photo> photos;
     private ApiService myAPIService;
 
-    public PhotoViewModel(Context context) {
-        this.context = context;
+    public PhotoViewModel() {
         photos = new ArrayList<>();
-
         fetchPhotos();
     }
 
     private void fetchPhotos() {
-
         myAPIService = RetrofitManager.getInstance().getAPI();
         myAPIService.getDatas()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(photos -> {changePhotos(photos);
-                Log.e("photo", String.valueOf(photos.size()));});
+                .subscribe(photos -> changePhotos(photos));
     }
 
     public List<Photo> getPhotos() {

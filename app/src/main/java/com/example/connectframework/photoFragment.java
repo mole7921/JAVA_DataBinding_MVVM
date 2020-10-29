@@ -65,7 +65,7 @@ public class photoFragment extends BaseFragment implements Observer, NavgateTo {
     private void startDataBinding() {
 
         fragmentPhotoBinding = DataBindingUtil.setContentView(getActivity(), R.layout.fragment_photo);
-        photoViewModel = new PhotoViewModel(getActivity());
+        photoViewModel = new PhotoViewModel();
         fragmentPhotoBinding.setPhotoViewModel(photoViewModel);
     }
 
