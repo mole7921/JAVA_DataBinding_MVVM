@@ -31,11 +31,11 @@ import java.util.Observer;
 
 
 
-public class photoFragment extends Fragment implements Observer, NavgateTo {
+public class photoFragment extends BaseFragment implements Observer, NavgateTo {
 
     private FragmentPhotoBinding fragmentPhotoBinding;
     private PhotoViewModel photoViewModel;
-    private NavController navController;
+
 
 
 
@@ -58,8 +58,6 @@ public class photoFragment extends Fragment implements Observer, NavgateTo {
         startDataBinding();
         createPhotoList(fragmentPhotoBinding.recycleView);
         setUpObserver(photoViewModel);
-
-        navController = Navigation.findNavController(view);
 
     }
 
@@ -94,13 +92,7 @@ public class photoFragment extends Fragment implements Observer, NavgateTo {
 
     @Override
     public void naviTo(Bundle bundle) {
-
-        if(navController!=null){
-            navController.navigate(R.id.action_photoFragment_to_detailFragment,bundle);
-        }else{
-            Log.e("is null","navController");
-        }
-
+            nav().navigate(R.id.action_photoFragment_to_detailFragment,bundle);
     }
 
 }

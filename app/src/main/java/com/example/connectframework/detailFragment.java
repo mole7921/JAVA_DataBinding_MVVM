@@ -28,11 +28,10 @@ import com.example.viewmodel.PhotoViewModel;
 import com.example.vo.Photo;
 
 
-public class detailFragment extends Fragment implements NavgateTo {
+public class detailFragment extends BaseFragment implements NavgateTo {
 
     private FragmentDetailBinding fragmentDetailBinding;
     private PhotoDetailViewModel photoDetailViewModel;
-    private NavController navController;
     private Bundle bundle;
 
 
@@ -52,10 +51,7 @@ public class detailFragment extends Fragment implements NavgateTo {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        navController = Navigation.findNavController(view);
         startDataBinding();
-
     }
 
     private void getExtrasFromBundle() {
@@ -74,10 +70,6 @@ public class detailFragment extends Fragment implements NavgateTo {
 
     @Override
     public void naviTo(Bundle bundle) {
-        if(navController!=null){
-            navController.popBackStack();
-        }else{
-            Log.e("is null","navController");
-        }
+           nav().popBackStack();
     }
 }
