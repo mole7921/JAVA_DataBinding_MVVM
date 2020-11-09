@@ -16,6 +16,7 @@ import com.example.viewmodel.NavgateTo;
 
 import java.io.IOException;
 
+//主Activity、Fragment Host
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_EXTERNAL_STORAGE_CODE = 1;
@@ -44,5 +45,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         verifyStoragePermissions(this);
     }
+
 
 }

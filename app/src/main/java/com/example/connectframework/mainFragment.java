@@ -20,7 +20,7 @@ import com.example.viewmodel.MainViewModel;
 import com.example.viewmodel.NavgateTo;
 import com.example.viewmodel.PhotoDetailViewModel;
 
-
+//首頁
 public class mainFragment extends BaseFragment implements NavgateTo {
 
     private FragmentMainBinding fragmentMainBinding;

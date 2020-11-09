@@ -1,16 +1,11 @@
 package com.example.adapter;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.util.Log;
+
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.connectframework.R;

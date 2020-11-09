@@ -27,7 +27,7 @@ import com.example.viewmodel.PhotoDetailViewModel;
 import com.example.viewmodel.PhotoViewModel;
 import com.example.vo.Photo;
 
-
+//宮格圖片點擊呈現的內頁
 public class detailFragment extends BaseFragment implements NavgateTo {
 
     private FragmentDetailBinding fragmentDetailBinding;

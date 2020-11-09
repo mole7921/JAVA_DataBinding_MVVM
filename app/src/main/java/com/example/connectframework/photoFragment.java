@@ -30,7 +30,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 
-
+//RecyclerView呈現頁
 public class photoFragment extends BaseFragment implements Observer, NavgateTo {
 
     private FragmentPhotoBinding fragmentPhotoBinding;
@@ -63,7 +63,6 @@ public class photoFragment extends BaseFragment implements Observer, NavgateTo {
 
 
     private void startDataBinding() {
-
         fragmentPhotoBinding = DataBindingUtil.setContentView(getActivity(), R.layout.fragment_photo);
         photoViewModel = new PhotoViewModel();
         fragmentPhotoBinding.setPhotoViewModel(photoViewModel);
@@ -89,10 +88,11 @@ public class photoFragment extends BaseFragment implements Observer, NavgateTo {
         }
     }
 
-
     @Override
     public void naviTo(Bundle bundle) {
             nav().navigate(R.id.action_photoFragment_to_detailFragment,bundle);
     }
+
+
 
 }
