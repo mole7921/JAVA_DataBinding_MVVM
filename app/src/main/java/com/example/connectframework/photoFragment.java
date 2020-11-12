@@ -1,30 +1,18 @@
 package com.example.connectframework;
 
-import android.app.Activity;
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.os.Bundle;
 
+import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.example.adapter.PhotoAdapter;
 import com.example.connectframework.databinding.FragmentPhotoBinding;
 import com.example.viewmodel.NavgateTo;
-import com.example.viewmodel.PhotoItemViewModel;
 import com.example.viewmodel.PhotoViewModel;
 import java.util.Observable;
 import java.util.Observer;

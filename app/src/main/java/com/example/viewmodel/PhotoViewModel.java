@@ -2,12 +2,8 @@ package com.example.viewmodel;
 
 
 import android.util.Log;
-
-import com.example.retrofit.ApiService;
 import com.example.retrofit.HttpEngine;
 import com.example.vo.Photo;
-
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
@@ -16,6 +12,7 @@ import java.util.Observable;
 
 public class PhotoViewModel extends Observable {
     private List<Photo> photos;
+
 
     public PhotoViewModel() {
         photos = new ArrayList<>();
@@ -28,6 +25,8 @@ public class PhotoViewModel extends Observable {
               throwable -> Log.e("Error:",throwable.getMessage()),
               () -> Log.e("onComplete:","Task onComplete")
       );
+
+
 
       /* lambda精簡前寫法
         HttpEngine.fetchPhotos(new Consumer<List<Photo>>() {

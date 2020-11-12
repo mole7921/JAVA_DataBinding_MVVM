@@ -1,18 +1,13 @@
 package com.example.viewmodel;
 
-import android.os.Bundle;
+
 import android.view.View;
 import android.widget.ImageView;
-
 import androidx.databinding.BindingAdapter;
-import androidx.databinding.ObservableInt;
-import androidx.databinding.ObservableParcelable;
-
 import com.example.ImageCache.DoubleCache;
 import com.example.ImageCache.ImageLoader;
 import com.example.ImageCache.MD5Encoder;
 import com.example.vo.Photo;
-
 import java.util.Observable;
 
 public class PhotoDetailViewModel extends Observable {

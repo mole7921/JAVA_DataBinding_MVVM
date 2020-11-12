@@ -1,12 +1,7 @@
 package com.example.adapter;
 
-import android.app.Activity;
-import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.navigation.NavController;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.connectframework.databinding.ItemViewBinding;
 import com.example.viewmodel.NavgateTo;
 import com.example.viewmodel.PhotoItemViewModel;

@@ -1,14 +1,9 @@
 package com.example.okhttp;
 
-import android.util.Log;
+
 import android.widget.ImageView;
-
-import com.google.gson.Gson;
-
 import java.io.IOException;
 import java.lang.ref.WeakReference;
-import java.util.List;
-
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.OkHttpClient;

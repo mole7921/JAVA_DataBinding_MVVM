@@ -1,23 +1,15 @@
 package com.example.viewmodel;
 
-import android.app.Activity;
-import android.content.Context;
+
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
 import androidx.databinding.BaseObservable;
 import androidx.databinding.BindingAdapter;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-
-import com.bumptech.glide.Glide;
 import com.example.ImageCache.DoubleCache;
 import com.example.ImageCache.ImageLoader;
 import com.example.ImageCache.MD5Encoder;
-import com.example.connectframework.R;
-import com.example.okhttp.Onhttp;
 import com.example.vo.Photo;
 
 public class PhotoItemViewModel extends BaseObservable {

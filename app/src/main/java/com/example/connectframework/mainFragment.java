@@ -5,20 +5,13 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
-import com.example.connectframework.databinding.FragmentDetailBinding;
 import com.example.connectframework.databinding.FragmentMainBinding;
 import com.example.viewmodel.MainViewModel;
 import com.example.viewmodel.NavgateTo;
-import com.example.viewmodel.PhotoDetailViewModel;
+
 
 //首頁
 public class mainFragment extends BaseFragment implements NavgateTo {

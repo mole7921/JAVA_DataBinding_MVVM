@@ -1,30 +1,15 @@
 package com.example.connectframework;
 
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.example.ImageCache.DoubleCache;
-import com.example.ImageCache.ImageLoader;
-import com.example.ImageCache.MemoryCache;
 import com.example.connectframework.databinding.FragmentDetailBinding;
-import com.example.connectframework.databinding.FragmentPhotoBinding;
 import com.example.viewmodel.NavgateTo;
 import com.example.viewmodel.PhotoDetailViewModel;
-import com.example.viewmodel.PhotoViewModel;
 import com.example.vo.Photo;
 
 //宮格圖片點擊呈現的內頁

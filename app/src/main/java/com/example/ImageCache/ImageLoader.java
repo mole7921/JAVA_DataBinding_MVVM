@@ -7,10 +7,8 @@ import android.widget.ImageView;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
-import java.lang.ref.WeakReference;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;

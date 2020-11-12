@@ -3,16 +3,13 @@ package com.example.adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.connectframework.R;
 import com.example.connectframework.databinding.ItemViewBinding;
 import com.example.viewmodel.NavgateTo;
 import com.example.vo.Photo;
-
 import java.util.Collections;
 import java.util.List;
 
