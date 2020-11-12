@@ -4,7 +4,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 import android.widget.ImageView;
-
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.util.concurrent.ExecutorService;
@@ -40,10 +39,6 @@ public class ImageLoader {
 
         Bitmap bitmap = mImageCache.get(md5);
         if(bitmap != null){
-            Log.e("-----------", "");
-            Log.e("123", md5);
-            Log.e("234", (String) imageView.getTag());
-            Log.e("-----------", "");
             if(md5.equals(imageView.getTag())) {
                 imageView.setImageBitmap(bitmap);
             }
@@ -75,8 +70,6 @@ public class ImageLoader {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-
-
 
 
                 try {
