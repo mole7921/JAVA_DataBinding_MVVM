@@ -10,7 +10,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-public class okhttpUtil {
+public class okHttpUtil {
 
     private OkHttpClient okhttpClient = new OkHttpClient();
     private WeakReference<ImageView> imageViewWeakReference;

@@ -1,7 +1,12 @@
 package com.example.retrofit;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -23,7 +28,21 @@ public class RetrofitManager {
                 .connectTimeout(DEFAULT_CONNECT_TIME, TimeUnit.SECONDS)//連接超時
                 .writeTimeout(DEFAULT_WRITE_TIME, TimeUnit.SECONDS)//寫入操作超時
                 .readTimeout(DEFAULT_READ_TIME, TimeUnit.SECONDS)//讀取操作超時
-                .build();
+//                .addInterceptor(new Interceptor() {    //set header
+//                    @Override
+//                    public Response intercept(Interceptor.Chain chain) throws IOException {
+//                    Request original = chain.request();
+//
+//                    Request request = original.newBuilder()
+//                        .header("User-Agent", "Your-App-Name")
+//                        .header("Accept", "application/vnd.yourapi.v1.full+json")
+//                        .method(original.method(), original.body())
+//                        .build();
+//
+//                        return chain.proceed(request);
+//                        }
+//                    })
+                    .build();
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(ApiUrl)
