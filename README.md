@@ -1,4 +1,4 @@
-面試題初試MVVM
+MVVM with Java
 
 API: https://jsonplaceholder.typicode.com, end point: /photos
 
